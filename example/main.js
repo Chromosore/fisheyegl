@@ -120,7 +120,7 @@ jQuery(document).ready(function($) {
         var uniq = (new Date()).getTime();
         $('#previous').prepend('<a target="_blank" class="' + uniq + '" href="' + dataurl + '"></a>');
         $('.' + uniq).append(distorter.getImage());
-        distorter.setImage(event.target.result, function callback() {
+        distorter.setImage(e.target.result, function callback() {
           $('#grid').height($('#canvas').height());
           $('#grid').width($('#canvas').width());
         });
